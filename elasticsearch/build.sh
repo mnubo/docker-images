@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 NAMESPACE=mnubo
-REPOSITORY=jre8
-VERSION=u91
+REPOSITORY=elasticsearch
+VERSION=1.5.2
 
 docker build -t $NAMESPACE/$REPOSITORY:$VERSION . &&
 docker tag $NAMESPACE/$REPOSITORY:$VERSION $NAMESPACE/$REPOSITORY:latest

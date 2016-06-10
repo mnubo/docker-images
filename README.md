@@ -10,3 +10,12 @@ An image for running JVM based applications on the Oracle JRE 1.8 and Debian Jes
 Example usage:
 
     docker run -v /path/to/some/application.jar:/app/application.jar mnubo/jre8 -jar /app/application.jar
+
+## mnubo/cassandra
+
+A Cassandra image for running automated tests. It is basically the official Cassandra image minus the volume, so we can retain data in the container when committing.
+
+## mnubo/elasticsearch
+
+An Elasticsearch image for running automated tests. It is basically the official Elasticsearch image minus the volume, so we can retain data in the container when committing.
+
