@@ -1,0 +1,4 @@
+script.disable_dynamic: false
+discovery.zen.minimum_master_nodes: 1
+discovery.zen.ping.multicast.enabled: false
+discovery.zen.ping.unicast.hosts: ["localhost"]
