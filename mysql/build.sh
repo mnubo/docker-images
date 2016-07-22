@@ -1,0 +1,8 @@
+#!/bin/bash
+
+NAMESPACE=mnubo
+REPOSITORY=mysql
+VERSION=5.6.31
+
+docker build -t $NAMESPACE/$REPOSITORY:$VERSION . &&
+docker tag $NAMESPACE/$REPOSITORY:$VERSION $NAMESPACE/$REPOSITORY:latest
