@@ -19,3 +19,6 @@ A Cassandra image for running automated tests. It is basically the official Cass
 
 An Elasticsearch image for running automated tests. It is basically the official Elasticsearch image minus the volume, so we can retain data in the container when committing.
 
+## mnubo/mysql
+
+A Mysql image for running automated tests. It is basically the official Mysql image minus the volume, so we can retain data in the container when committing.

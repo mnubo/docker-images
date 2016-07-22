@@ -2,7 +2,7 @@
 # Main changes: remove volume, conflate RUN statements to decrease number of layers
 FROM mnubo/jre8:u91
 
-ENV CASSANDRA_VERSION 2.1.14
+ENV CASSANDRA_VERSION 2.1.15
 ENV CASSANDRA_CONFIG /etc/cassandra
 
 ENV MAX_HEAP_SIZE=512M
