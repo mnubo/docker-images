@@ -1,0 +1,8 @@
+#!/bin/sh
+
+NAMESPACE=mnubo
+REPOSITORY=cassandra
+VERSION=3.0
+
+docker build -t $NAMESPACE/$REPOSITORY:$VERSION . &&
+docker tag $NAMESPACE/$REPOSITORY:$VERSION $NAMESPACE/$REPOSITORY:latest
