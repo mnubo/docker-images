@@ -1,0 +1,8 @@
+script.inline: on
+script.indexed: on
+discovery.zen.minimum_master_nodes: 1
+discovery.zen.ping.multicast.enabled: false
+discovery.zen.ping.unicast.hosts: ["localhost"]
+network.host: 0.0.0.0
+cluster.routing.allocation.disk.watermark.high: 5mb
+cluster.routing.allocation.disk.watermark.low: 10mb
