@@ -1,0 +1,7 @@
+grant {
+    permission org.elasticsearch.script.ClassPermission "org.elasticsearch.common.joda.Joda"; // allow class
+    permission org.elasticsearch.script.ClassPermission "org.joda.time.chrono.ISOChronology"; // allow class
+    permission org.elasticsearch.script.ClassPermission "org.joda.time.field.DividedDateTimeField"; // allow class
+    permission org.elasticsearch.script.ClassPermission "org.joda.time.field.OffsetDateTimeField"; // allow class
+    permission org.elasticsearch.script.ClassPermission "org.joda.time.format.DateTimeFormat"; // allow class
+};
