@@ -18,6 +18,7 @@ RUN apt-get install -y curl &&\
     rm -rf /var/lib/apt/lists/* &&\
     set -ex &&\
       for path in \
+        /home/elasticsearch \
         /usr/share/elasticsearch/data \
         /usr/share/elasticsearch/logs \
         /usr/share/elasticsearch/config \
@@ -33,6 +34,7 @@ RUN apt-get install -y curl &&\
 
 ENV PATH /usr/share/elasticsearch/bin:$PATH
 COPY config /usr/share/elasticsearch/config
+COPY java.policy /home/elasticsearch/.java.policy
 
 COPY docker-entrypoint.sh /
 
