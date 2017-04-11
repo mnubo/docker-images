@@ -6,3 +6,5 @@ discovery.zen.ping.unicast.hosts: ["localhost"]
 network.host: 0.0.0.0
 cluster.routing.allocation.disk.watermark.high: 5mb
 cluster.routing.allocation.disk.watermark.low: 10mb
+action.auto_create_index: false
+index.mapper.dynamic: false
